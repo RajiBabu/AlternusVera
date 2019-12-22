@@ -118,10 +118,10 @@ def prediction(xtest):
     pickleModel = "/content/gdrive/My Drive/Drifters/Models/Authenticity_Model.pkl"
     pickle_in = open(pickleModel, "rb")
     loadData = pickle.load(pickle_in)
-    dataset = loadData.predict(xtest) 
-    for i in dataset:
-        if(i==0):
-            return 0
+   # dataset = loadData.predict(xtest) 
+   # for i in dataset:
+   #     if(i==0):
+   #         return 0
     return 1
 
 def processFakeNews(fnews):
